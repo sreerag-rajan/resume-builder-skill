@@ -1,0 +1,4 @@
+pypandoc-binary==1.17
+pywin32
+PyMuPDF
+markdown
