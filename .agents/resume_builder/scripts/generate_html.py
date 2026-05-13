@@ -11,6 +11,9 @@ def generate_html(md_path, css_path, html_path):
         import re
         md_content = re.sub(r'^---.*?---', '', md_content, flags=re.DOTALL).strip()
 
+        # Support manual page breaks
+        md_content = md_content.replace('<!-- PAGE BREAK -->', '<div class="page-break"></div>')
+
         # Convert to HTML
         html_body = markdown.markdown(md_content)
 
@@ -50,6 +53,6 @@ if __name__ == "__main__":
     else:
         # Default paths relative to project root
         md = "output/resume.md"
-        css = ".agents/resume_builder/style.css"
+        css = ".agents/resume_builder/templates/style.css"
         html = "output/resume.html"
         generate_html(md, css, html)

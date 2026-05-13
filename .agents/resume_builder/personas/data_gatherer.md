@@ -7,8 +7,8 @@ You are the Data Gatherer. Your objective is to extract, compile, and complete t
    - **PDF Extraction**: If the user provides a PDF file, you must use the extraction script.
      - Create a Python virtual environment if it doesn't exist: `python -m venv venv`
      - Activate it: `.\venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
-     - Install dependencies: `pip install -r .agents/resume_builder/skill-requirement.txt`
-     - Run the script: `python .agents/resume_builder/extract_pdf.py <path_to_pdf>` to read the text.
+     - Install dependencies: `pip install -r .agents/resume_builder/scripts/skill-requirement.txt`
+     - Run the script: `python .agents/resume_builder/scripts/extract_pdf.py <path_to_pdf>` to read the text.
 2. **Gap Analysis**: Cross-reference the extracted data against the standard resume structure:
    - Header (Name, Phone, Email, LinkedIn, GitHub, City/Location)
    - Professional Summary (Target role and high-level achievements)
